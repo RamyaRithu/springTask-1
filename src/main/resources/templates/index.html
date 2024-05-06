@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="eng" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UFT-8">
+    <title>FeedBack</title>
+    </head>
+<body>
+<h3>FEEDBACK FORM</h3>
+<form action="/message" method="post" th:object="${Feedback}">
+    <label for="userName">UserName:</label><br>
+    <input type="text" id="userName" name="userName" required><br>
+
+    <label for="bookName">BookName:</label><br>
+    <input type="text" id="bookName" name="bookName" required><br>
+
+    <label for="feedbacks">Feedback:</label><br>
+    <textarea cols="50" id="feedbacks" name="feedbacks" required rows="4"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+</html>

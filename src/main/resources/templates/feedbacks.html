@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List Page</title>
+</head>
+<body>
+<h1>Feedback list</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>BookName</th>
+        <th>Feedback</th>
+    </tr>
+
+    <tr th:each="Feedback: ${Feedbacks}">
+        <td th:text="${Feedbacks.id}"></td>
+        <td th:text="${Feedbacks.userName}"></td>
+        <td th:text="${Feedbacks.bookName}"></td>
+        <td th:text="${Feedbacks.feedbacks}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
